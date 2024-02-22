@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { theme: { container: { center: true,padding: { DEFAULT:
+      '1rem', sm: '2rem', lg: '4rem', xl: '5rem', '2xl': '6rem', }, }, },}
+    </script>
+  </head>
+  <body class="bg-[#0f0e15] transition-all">
+    {{! header start }}
+    <header class="text-[#eee] my-16 absolute top-0 w-full z-50">
+      <div class="container flex justify-between items-center flex-wrap">
+        {{!-- logo start --}}
+        <div>
+          <a href="/" class="font-black text-3xl hover:text-[#ff7b7b] transition-all cursor-pointer">代码小白Elvin</a>
+        </div>
+        {{!-- logo end --}}
+        {{!-- nav start --}}
+        <nav>
+          <ul class="flex">
+            <li class="mr-10">
+              <a href="/" class="text-sm font-bold hover:text-[#ff7b7b] transition-all cursor-pointer">首页</a>
+            </li>
+            <li class="mr-10">
+              <a href="/" class="text-sm font-bold hover:text-[#ff7b7b] transition-all cursor-pointer">关于</a>
+            </li>
+            <li class="mr-10">
+              <a href="/" class="text-sm font-bold hover:text-[#ff7b7b] transition-all cursor-pointer">分类</a>
+            </li>
+            <li class="mr-10">
+              <a href="/" class="text-sm font-bold hover:text-[#ff7b7b] transition-all cursor-pointer">项目</a>
+            </li>
+            <li class="mr-10">
+              <a href="/" class="text-sm font-bold hover:text-[#ff7b7b] transition-all cursor-pointer">联系</a>
+            </li>
+          </ul>
+        </nav>
+        {{!-- nav end --}}
+        {{!-- search button start --}}
+        <div class="flex items-center">
+          <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 38C30.3888 38 38 30.3888 38 21C38 11.6112 30.3888 4 21 4C11.6112 4 4 11.6112 4 21C4 30.3888 11.6112 38 21 38Z" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round"/><path d="M26.657 14.3431C25.2093 12.8954 23.2093 12 21.0001 12C18.791 12 16.791 12.8954 15.3433 14.3431" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M33.2216 33.2217L41.7069 41.707" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-sm font-bold ml-2 hover:text-[#ff7b7b] transition-all cursor-pointer">搜索</span>
+        </div>
+        {{!-- search button end --}}
+      </div>
+    </header>
+    {{! header end }}
+    {{{body}}}
+    {{!-- article widgets start --}}
+    <div></div>
+    {{!-- article widgets end --}}
+  </body>
+</html>

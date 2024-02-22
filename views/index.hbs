@@ -1,0 +1,326 @@
+<main>
+  {{! banner start }}
+  <div class="banner">
+    {{! banner img start }}
+    <div class="min-h-[664px] select-none">
+      <img
+        class="absolute top-0 w-full h-full object-cover"
+        alt="代码小白Elvin"
+        src="/images/01.jpg"
+      />
+    </div>
+    {{! banner img end }}
+    {{! banner content start }}
+    <div
+      class="absolute top-1/2 left-1/2 w-full max-w-[650px] text-center z-10 -translate-x-1/2 -translate-y-1/2"
+    >
+      <h1 class="text-6xl text-white mb-3">你好,我是Elvin</h1>
+      <p class="text-xl text-[#aaa]">求知若饥，虚心若愚</p>
+    </div>
+    {{! banner content end }}
+  </div>
+  {{! banner end }}
+  <div class="container">
+    <div class="flex gap-8 mb-8">
+      {{#each posts}}
+        <div
+          class="relative w-1/3 h-80 bg-[#09080f] rounded-2xl shadow-[0_5px_10px_0_rgba(0,0,0,0.5)] cursor-pointer transition-all duration-200 hover:-translate-y-2"
+        >
+          {{! star icon start }}
+          <div class="absolute top-5 right-8 p-1 rounded bg-white/5 z-10">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            ><path
+                d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z"
+                fill="none"
+                stroke="#aaa"
+                stroke-width="4"
+                stroke-linejoin="round"
+              /></svg>
+          </div>
+          {{! star icon end }}
+          {{! bg img start }}
+          <a
+            href="/"
+            class="block absolute top-0 left-0 w-full h-full bg-[#09080f] select-none post-img"
+          >
+            <img
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl"
+              alt="The way I see it, every life is a pile of good things"
+              src="/images/{{this}}"
+            />
+          </a>
+          {{! bg img end }}
+          <div class="pb-8 px-8 z-10 w-full absolute bottom-2 text-white">
+            <div class="text-xs font-medium tracking-widest">
+              <span>2分钟读完</span>
+              <time class="text-[#aaa]">2024/02/22</time>
+            </div>
+            <h2 class="my-4 text-2xl font-black show-two-line">uniApp新模式:
+              使用Vue3 + Vite4 + Pinia + Axios技术栈构建</h2>
+            <p class="text-[#aaa] text-sm mb-3">使用Vue3 + Vite4 + Pinia + Axios
+              +
+              Vscode模式开发之后，感叹真香！不用再单独去下载HBuilderX。废话不多说，直接上干货！</p>
+            <div class="flex items-center gap-2">
+              <a
+                href="#"
+                class="block w-9 h-9 border-2 p-[3px] border-[#ff7b7b] rounded-full overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover rounded-full"
+                  alt="Robert Wilson's Picture"
+                  data-ll-status="loaded"
+                  src="/images/15.jpg"
+                />
+              </a>
+              <span class="text-white text-sm">Elvin Sun</span>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Vue</a>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Typescript</a>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Vite</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <div class="flex gap-8 mb-8">
+      {{#each postsBig}}
+        <div
+          class="relative w-1/2 h-80 bg-[#09080f] rounded-2xl shadow-[0_5px_10px_0_rgba(0,0,0,0.5)] cursor-pointer transition-all duration-200 hover:-translate-y-2"
+        >
+          {{! star icon start }}
+          <div class="absolute top-5 right-8 p-1 rounded bg-white/5 z-10">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            ><path
+                d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z"
+                fill="none"
+                stroke="#aaa"
+                stroke-width="4"
+                stroke-linejoin="round"
+              /></svg>
+          </div>
+          {{! star icon end }}
+          {{! bg img start }}
+          <a
+            href="/"
+            class="block absolute top-0 left-0 w-full h-full bg-[#09080f] select-none post-img"
+          >
+            <img
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl"
+              alt="The way I see it, every life is a pile of good things"
+              src="/images/{{this}}"
+            />
+          </a>
+          {{! bg img end }}
+          <div class="pb-8 px-8 z-10 w-full absolute bottom-2 text-white">
+            <div class="text-xs font-medium tracking-widest">
+              <span>2分钟读完</span>
+              <time class="text-[#aaa]">2024/02/22</time>
+            </div>
+            <h2 class="my-4 text-2xl font-black show-two-line">uniApp新模式:
+              使用Vue3 + Vite4 + Pinia + Axios技术栈构建</h2>
+            <p class="text-[#aaa] text-sm mb-3">使用Vue3 + Vite4 + Pinia + Axios
+              +
+              Vscode模式开发之后，感叹真香！不用再单独去下载HBuilderX。废话不多说，直接上干货！</p>
+            <div class="flex items-center gap-2">
+              <a
+                href="#"
+                class="block w-9 h-9 border-2 p-[3px] border-[#ff7b7b] rounded-full overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover rounded-full"
+                  alt="Robert Wilson's Picture"
+                  data-ll-status="loaded"
+                  src="/images/15.jpg"
+                />
+              </a>
+              <span class="text-white text-sm">Elvin Sun</span>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Vue</a>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Typescript</a>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Vite</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <div class="flex gap-8 mb-8">
+      {{#each posts}}
+        <div
+          class="relative w-1/3 h-80 bg-[#09080f] rounded-2xl shadow-[0_5px_10px_0_rgba(0,0,0,0.5)] cursor-pointer transition-all duration-200 hover:-translate-y-2"
+        >
+          {{! star icon start }}
+          <div class="absolute top-5 right-8 p-1 rounded bg-white/5 z-10">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            ><path
+                d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z"
+                fill="none"
+                stroke="#aaa"
+                stroke-width="4"
+                stroke-linejoin="round"
+              /></svg>
+          </div>
+          {{! star icon end }}
+          {{! bg img start }}
+          <a
+            href="/"
+            class="block absolute top-0 left-0 w-full h-full bg-[#09080f] select-none post-img"
+          >
+            <img
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl"
+              alt="The way I see it, every life is a pile of good things"
+              src="/images/{{this}}"
+            />
+          </a>
+          {{! bg img end }}
+          <div class="pb-8 px-8 z-10 w-full absolute bottom-2 text-white">
+            <div class="text-xs font-medium tracking-widest">
+              <span>2分钟读完</span>
+              <time class="text-[#aaa]">2024/02/22</time>
+            </div>
+            <h2 class="my-4 text-2xl font-black show-two-line">uniApp新模式:
+              使用Vue3 + Vite4 + Pinia + Axios技术栈构建</h2>
+            <p class="text-[#aaa] text-sm mb-3">使用Vue3 + Vite4 + Pinia + Axios
+              +
+              Vscode模式开发之后，感叹真香！不用再单独去下载HBuilderX。废话不多说，直接上干货！</p>
+            <div class="flex items-center gap-2">
+              <a
+                href="#"
+                class="block w-9 h-9 border-2 p-[3px] border-[#ff7b7b] rounded-full overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover rounded-full"
+                  alt="Robert Wilson's Picture"
+                  data-ll-status="loaded"
+                  src="/images/15.jpg"
+                />
+              </a>
+              <span class="text-white text-sm">Elvin Sun</span>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Vue</a>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Typescript</a>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Vite</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <div class="flex gap-8 mb-16">
+      {{#each posts}}
+        <div
+          class="relative w-1/3 h-80 bg-[#09080f] rounded-2xl shadow-[0_5px_10px_0_rgba(0,0,0,0.5)] cursor-pointer transition-all duration-200 hover:-translate-y-2"
+        >
+          {{! star icon start }}
+          <div class="absolute top-5 right-8 p-1 rounded bg-white/5 z-10">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            ><path
+                d="M23.9986 5L17.8856 17.4776L4 19.4911L14.0589 29.3251L11.6544 43L23.9986 36.4192L36.3454 43L33.9586 29.3251L44 19.4911L30.1913 17.4776L23.9986 5Z"
+                fill="none"
+                stroke="#aaa"
+                stroke-width="4"
+                stroke-linejoin="round"
+              /></svg>
+          </div>
+          {{! star icon end }}
+          {{! bg img start }}
+          <a
+            href="/"
+            class="block absolute top-0 left-0 w-full h-full bg-[#09080f] select-none post-img"
+          >
+            <img
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl"
+              alt="The way I see it, every life is a pile of good things"
+              src="/images/{{this}}"
+            />
+          </a>
+          {{! bg img end }}
+          <div class="pb-8 px-8 z-10 w-full absolute bottom-2 text-white">
+            <div class="text-xs font-medium tracking-widest">
+              <span>2分钟读完</span>
+              <time class="text-[#aaa]">2024/02/22</time>
+            </div>
+            <h2 class="my-4 text-2xl font-black show-two-line">uniApp新模式:
+              使用Vue3 + Vite4 + Pinia + Axios技术栈构建</h2>
+            <p class="text-[#aaa] text-sm mb-3">使用Vue3 + Vite4 + Pinia + Axios
+              +
+              Vscode模式开发之后，感叹真香！不用再单独去下载HBuilderX。废话不多说，直接上干货！</p>
+            <div class="flex items-center gap-2">
+              <a
+                href="#"
+                class="block w-9 h-9 border-2 p-[3px] border-[#ff7b7b] rounded-full overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover rounded-full"
+                  alt="Robert Wilson's Picture"
+                  data-ll-status="loaded"
+                  src="/images/15.jpg"
+                />
+              </a>
+              <span class="text-white text-sm">Elvin Sun</span>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Vue</a>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Typescript</a>
+              <a
+                href="#"
+                class="text-[#aaa] text-xs block border-2 border-white/5 rounded-3xl px-2 py-1"
+              >Vite</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    {{!-- load more button start --}}
+    <div class="text-center mb-16">
+      <button class="w-full max-w-[412px] px-12 py-6 text-sm font-bold tracking-widest text-white bg-[#09080f] transition-all hover:bg-[#17151E]">阅读更多</button>
+    </div>
+    {{!-- load more button end --}}
+  </div>
+</main>
